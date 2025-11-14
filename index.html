@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.U IKARA GLOBAL VENTURES | Smartphones & Accessories</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background */
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://placehold.co/1920x1080/0d1117/30363d?text=Digital+Development+Background');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #4ade80, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        /* Custom button style for the AI feature */
+        .ai-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .ai-button:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body class="text-gray-100">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-xl">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <!-- Logo Area -->
+            <a href="#home" class="flex items-center space-x-3">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4gHYSUNDX1BST09GSUxFOgAQclhZWloAAABzAAAABAAAAABtY3JtAAAAAAAAAHIAAAAAAAAB/gAUU2ltY2wgZGVmYXVsdCBSR0IgY29tcGxleAAAAAAAAAAAAAAPZGVzYwAAAAAAAAABAAAAd3RTaW1jbiBkZWZhdWx0IFJHQiBjb21wbGV4AAAAAAAlY3JtAAAAAAAAAAABAAAASnJYWVoAAAAAAAAAAAABAAAAFGdYWVoAAAAAAAAAAAACAAAAFGJYWVoAAAAAAAAAAAADAAAAFHhkc2MAAAAAAAAAAAAABAAAAGFpZHNjAAAAAAAAAAABAAAAZHNlYmYAAAAAAAAAAgAAAABzMnRyAAAAAAAAAAADAAAAA3ZpZXcAAAAAAAAAAAABAAAAAHRhZ2cAAAAAAAAAAAABAAAAI2Rlc2MAAAAAAAAAAAABAAAAJ29TUnVzaW1jbiBkZWZhdWx0IFJHQiBjb21wbGV4AAAAAAAAAAAAAABgY2hhZAAAAAAAAAABAAAAM2NydmQAAAAAAAAAAQAAAAp2d2dnZ2cAAAAAAAAAAQAAAAZtbHVjAAAAAAAAAAABAAAADGphLUpQAAAAJQAAAUoAVwBsAGkAZwBoAHQAZQByACAAYgBhAHMAZQBkACAAUgBHAEIAIABjAG8AbQBwAGwAZQBY/9sAQwADAgIDAgIDAwIDAgMDAwQDAwMDAwMEBAYFBgYGBgYGBAUGBgYGBgYGBwcHBwcHCAgICAgICgcHCAgIDAoKCgoK/9sAQwEDAwMDAwYMDAcMDw0MDgwNDQ4ODg4NDwwMDgwMDg4PDg4NDg4NDg4ODg4ODg4NDg4NDg4ODg4ODg4ODg4ODg4O/8IAEQgBfAGmAwERAAIRAAMRAf/EAB0AAAIDAQEBAQEAAAAAAAAAAAUGAwQHAggJAAEBAQADAQEAAAAAAAAAAAAAAAMFBgcECAIBCP/aAAwDAQACEAMQAAAA+kXwHwV8c/Lnx98O/l/8AHD4F+Q/xH+Pfzb+Pvx3+Ovx/wDmn87fiD8o/lD8Zfjv+NvxN+Mfxj+ePzr+cv5+/pX8tX4A/m3/Pv4E/mL+c/wA9P0X/i//N/zZ+cv42/o7+lX3h96/pD+g/0N+LfyT/Of8c/zf+PP59/kX9OfuV+4X7DfsV+0X6o/tJ+wX7kfsf+2/7X/uX+8X7z/vX/Af8F/wf/HP8i/yv/PP8/wA3+D/+F/8P/xH/H/8f/x//MP8//z//P/8n/yL/K/87/z3/P/8AEP8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8AEf8A//EABsQAAAFAAAAAAAAAAAAAAAAAAIEBAcBAwX/2sAigEAAQACAAAAAAAAAfzVdfL6d+/lX3j+k9tVdvL7d+/7X/9k=" alt="N.U IKARA GLOBAL VENTURES Logo" class="w-10 h-10">
+                <span class="text-2xl font-extrabold text-white">N.U IKARA</span>
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-400 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a>
+                <a href="#advisor" class="text-gray-400 hover:text-white transition duration-300">Advisor</a>
+                <a href="#products" class="text-gray-400 hover:text-white transition duration-300">Products</a>
+                <a href="#mission" class="text-gray-400 hover:text-white transition duration-300">Our Mission</a>
+                <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a>
+            </div>
+        </nav>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800/95">
+            <a href="#home" class="block py-3 px-4 text-gray-300 hover:bg-gray-700 hover:text-white transition duration-300 border-b border-gray-700">Home</a>
+            <a href="#advisor" class="block py-3 px-4 text-gray-300 hover:bg-gray-700 hover:text-white transition duration-300 border-b border-gray-700">AI Advisor</a>
+            <a href="#products" class="block py-3 px-4 text-gray-300 hover:bg-gray-700 hover:text-white transition duration-300 border-b border-gray-700">Products</a>
+            <a href="#mission" class="block py-3 px-4 text-gray-300 hover:bg-gray-700 hover:text-white transition duration-300 border-b border-gray-700">Our Mission</a>
+            <a href="#contact" class="block py-3 px-4 text-gray-300 hover:bg-gray-700 hover:text-white transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg h-screen flex items-center justify-center text-center p-4">
+            <div class="max-w-4xl space-y-6">
+                <h1 class="text-5xl sm:text-7xl font-extrabold leading-tight tracking-tighter">
+                    <span class="text-white">N.U IKARA</span> <span class="text-gradient">GLOBAL VENTURES</span>
+                </h1>
+                <p class="text-xl sm:text-2xl text-gray-300 font-medium">
+                    YOUR TRUSTED PARTNER SELLING SMARTPHONES AND ACCESSORIES
+                </p>
+                <a href="#advisor" class="inline-block px-8 py-3 mt-4 text-lg font-semibold bg-green-500 text-gray-900 rounded-full hover:bg-green-400 transition duration-300 shadow-lg transform hover:scale-105">
+                    Find Your Perfect Tech
+                </a>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="mission" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+                <h2 class="text-4xl font-bold text-center mb-6 text-green-400">Our Core Mission</h2>
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border-t-4 border-green-500">
+                    <p class="text-xl leading-relaxed text-gray-300 text-center">
+                        Our mission is to **deliver quality smartphones and accessories** that enhance digital development in support of growth. We are committed to providing the tools necessary for connection, productivity, and advancement in the digital age.
+                    </p>
+                    <p class="text-sm mt-6 text-gray-500 text-center">
+                        — N.U IKARA GLOBAL VENTURES: Enhancing Digital Futures.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- AI Product Advisor Section -->
+        <section id="advisor" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                <h2 class="text-4xl font-bold text-center mb-6 text-white">AI Product Advisor ✨</h2>
+                <p class="text-center text-gray-400 mb-8">Tell us your digital goals or specific needs, and our Gemini-powered advisor will recommend the ideal combination of devices and accessories.</p>
+
+                <div class="bg-gray-900 p-8 rounded-xl shadow-2xl border border-green-500/50 space-y-6">
+                    <div>
+                        <label for="user-goal" class="block text-lg font-medium text-green-400 mb-2">My Digital Goal Is...</label>
+                        <textarea id="user-goal" rows="3" placeholder="Example: 'I need a durable phone and long-lasting power for remote travel and photography.'" 
+                                class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-green-500 focus:border-green-500 text-white transition duration-200"></textarea>
+                    </div>
+                    
+                    <button id="recommend-button" 
+                            class="ai-button w-full px-6 py-3 font-bold bg-green-500 text-gray-900 rounded-lg hover:bg-green-400 transition duration-300 shadow-md flex items-center justify-center disabled:opacity-50"
+                            onclick="generateRecommendation()">
+                        <svg class="w-5 h-5 mr-2 text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM5.293 8.707a1 1 0 011.414 0L10 11.586l3.293-2.879a1 1 0 111.332 1.488l-4 3.5a1 1 0 01-1.332 0l-4-3.5a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        ✨ Get Smart Recommendation
+                    </button>
+
+                    <!-- Results Area -->
+                    <div id="advisor-results" class="pt-4 border-t border-gray-700 hidden">
+                        <p class="text-lg font-semibold text-green-400 mb-2">Your Recommendation:</p>
+                        <div id="loading-indicator" class="text-center py-4 hidden">
+                            <svg class="animate-spin h-6 w-6 text-green-500 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                            <p class="mt-2 text-gray-400">Thinking...</p>
+                        </div>
+                        <div id="recommendation-text" class="text-gray-300 prose prose-invert max-w-none">
+                            <!-- LLM result goes here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12 text-white">Featured Products</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Product Card 1: Premium Smartphones -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl transform hover:scale-[1.02] transition duration-300 border border-gray-700">
+                        <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Premium+Smartphone" alt="Premium Smartphone" class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-2xl font-semibold text-green-400 mb-2">Flagship Devices</h3>
+                        <p class="text-gray-400 mb-4">The latest in mobile technology, featuring cutting-edge processors, camera systems, and vibrant displays.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li><span class="text-green-500">•</span> High Performance</li>
+                            <li><span class="text-green-500">•</span> Advanced Camera Modules</li>
+                            <li><span class="text-green-500">•</span> Superior Build Quality</li>
+                        </ul>
+                    </div>
+
+                    <!-- Product Card 2: Essential Accessories -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl transform hover:scale-[1.02] transition duration-300 border border-gray-700">
+                        <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Essential+Accessories" alt="Essential Accessories" class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-2xl font-semibold text-green-400 mb-2">Essential Accessories</h3>
+                        <p class="text-gray-400 mb-4">Durable cases, fast chargers, and power banks to keep your devices protected and running all day.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li><span class="text-green-500">•</span> Fast Charging Solutions</li>
+                            <li><span class="text-green-500">•</span> Robust Protection Cases</li>
+                            <li><span class="text-green-500">•</span> Seamless Connectivity</li>
+                        </ul>
+                    </div>
+
+                    <!-- Product Card 3: Audio & Wearables -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl transform hover:scale-[1.02] transition duration-300 border border-gray-700">
+                        <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Audio+and+Wearables" alt="Audio and Wearables" class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-2xl font-semibold text-green-400 mb-2">Audio & Wearables</h3>
+                        <p class="text-gray-400 mb-4">High-fidelity wireless earbuds and smartwatches that track fitness and integrate with your mobile life.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li><span class="text-green-500">•</span> Crystal Clear Audio</li>
+                            <li><span class="text-green-500">•</span> Health & Fitness Tracking</li>
+                            <li><span class="text-green-500">•</span> Long Battery Life</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+                <h2 class="text-4xl font-bold text-center mb-12 text-white">Get In Touch</h2>
+                
+                <form class="space-y-6 bg-gray-900 p-8 rounded-xl shadow-2xl">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-400 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-green-500 focus:border-green-500 text-white transition duration-200">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-400 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-green-500 focus:border-green-500 text-white transition duration-200">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-400 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="How can N.U IKARA GLOBAL VENTURES assist you?" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-green-500 focus:border-green-500 text-white transition duration-200"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-3 font-bold bg-green-500 text-gray-900 rounded-lg hover:bg-green-400 transition duration-300 shadow-md transform hover:scale-[1.01]">
+                        Send Message
+                    </button>
+                    <p id="form-message" class="text-center text-sm text-red-400 mt-4 hidden">
+                        <!-- Message box placeholder -->
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-700 py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 mb-2">&copy; 2025 N.U IKARA GLOBAL VENTURES. All rights reserved.</p>
+            <p class="text-sm text-gray-600">Your Trusted Partner Selling Smartphones and Accessories.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Gemini API Utilities and Logic ---
+
+        // Utility for robust API calls with exponential backoff
+        async function fetchWithBackoff(url, options, maxRetries = 5) {
+            let delay = 1000;
+            for (let i = 0; i < maxRetries; i++) {
+                try {
+                    const response = await fetch(url, options);
+                    if (response.ok) {
+                        return response;
+                    }
+                    if (response.status === 429 && i < maxRetries - 1) {
+                        // Too Many Requests, retry
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                        delay *= 2; // Exponential backoff
+                        continue;
+                    }
+                    throw new Error(`API call failed with status: ${response.status}`);
+                } catch (error) {
+                    if (i === maxRetries - 1) throw error;
+                    // Network error or other fetch error, retry
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                    delay *= 2;
+                }
+            }
+        }
+        
+        const advisorButton = document.getElementById('recommend-button');
+        const userGoalInput = document.getElementById('user-goal');
+        const resultsContainer = document.getElementById('advisor-results');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const recommendationText = document.getElementById('recommendation-text');
+        
+        const apiKey = ""; // API key is provided at runtime in the environment
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+
+        // Function to call the Gemini API
+        async function generateRecommendation() {
+            const userQuery = userGoalInput.value.trim();
+            if (!userQuery) {
+                recommendationText.innerHTML = '<p class="text-red-400">Please describe your digital goal or need first.</p>';
+                resultsContainer.classList.remove('hidden');
+                return;
+            }
+
+            // UI State: Loading
+            advisorButton.disabled = true;
+            loadingIndicator.classList.remove('hidden');
+            resultsContainer.classList.remove('hidden');
+            recommendationText.innerHTML = '';
+
+            const systemPrompt = `
+                You are a professional, helpful technology consultant for N.U IKARA GLOBAL VENTURES. 
+                Your mission is to enhance digital development and growth for the customer.
+                The company sells products in three categories: 
+                1. Flagship Devices (Smartphones)
+                2. Essential Accessories (Durable cases, fast chargers, power banks)
+                3. Audio & Wearables (Wireless earbuds, smartwatches)
+                
+                Analyze the user's goal or need. Recommend ONE product from the 'Flagship Devices' category and ONE item from EITHER the 'Essential Accessories' OR 'Audio & Wearables' category.
+                Your response must be structured clearly and be based on the general features of modern products in these categories, informed by Google Search for context.
+                
+                Format your final answer using Markdown like this:
+                
+                **Goal:** [Restate the User's Goal]
+                
+                **Our Recommendation for Your Digital Growth:**
+                
+                | Category | Suggested Product Type | Why it Fits Your Goal |
+                |---|---|---|
+                | Smartphone | [Specific type of Flagship Device, e.g., 'High-end Camera Phone'] | [1-2 sentences explaining why this type of phone is ideal.] |
+                | Accessory | [Specific type of Accessory/Wearable, e.g., 'Ultra-fast Power Bank'] | [1-2 sentences explaining how this accessory supports the goal.] |
+                
+                **Next Steps:** We are ready to help you procure this technology for your growth! Contact us today.
+            `;
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                tools: [{ "google_search": {} }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                },
+            };
+
+            const options = {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            };
+
+            try {
+                const response = await fetchWithBackoff(apiUrl, options);
+                const result = await response.json();
+                
+                const candidate = result.candidates?.[0];
+                let text = "We couldn't generate a recommendation at this moment. Please try again or contact our sales team.";
+                
+                if (candidate && candidate.content?.parts?.[0]?.text) {
+                    text = candidate.content.parts[0].text;
+                }
+
+                recommendationText.innerHTML = DOMPurify.sanitize(marked.parse(text));
+
+            } catch (error) {
+                console.error('Gemini API Error:', error);
+                recommendationText.innerHTML = '<p class="text-red-400">Sorry, there was an error connecting to our AI Advisor. Please check your network or try again later.</p>';
+            } finally {
+                // UI State: Done
+                loadingIndicator.classList.add('hidden');
+                advisorButton.disabled = false;
+            }
+        }
+        
+        // --- Setup for Markdown Rendering and Sanitization ---
+        
+        // Load marked.js for Markdown parsing (for better text output)
+        const markedScript = document.createElement('script');
+        markedScript.src = "https://cdn.jsdelivr.net/npm/marked/marked.min.js";
+        document.head.appendChild(markedScript);
+        
+        // Load DOMPurify for security when inserting dynamic content
+        const domPurifyScript = document.createElement('script');
+        domPurifyScript.src = "https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js";
+        document.head.appendChild(domPurifyScript);
+        
+        let DOMPurify, marked;
+
+        domPurifyScript.onload = () => { DOMPurify = window.DOMPurify; };
+        markedScript.onload = () => { marked = window.marked; };
+
+        // --- Standard Website JS ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const contactForm = document.querySelector('#contact form');
+            const formMessage = document.getElementById('form-message');
+
+            // 1. Mobile Menu Toggle
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // 2. Simple Contact Form Submission Handler (Prevents actual submission)
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Simulate form submission success
+                formMessage.textContent = 'Thank you for your message! We will get back to you shortly.';
+                formMessage.classList.remove('hidden', 'text-red-400');
+                formMessage.classList.add('text-green-400');
+                
+                // Clear the form fields after a delay
+                setTimeout(() => {
+                    contactForm.reset();
+                    formMessage.classList.add('hidden');
+                }, 4000);
+            });
+        });
+    </script>
+</body>
+</html>
